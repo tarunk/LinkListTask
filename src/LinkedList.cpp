@@ -11,14 +11,14 @@ LinkedList::LinkedList() {
 
 Node* LinkedList::getNode(int num) {
     //Modify code here
-    Node* temp = nullptr;
+    Node* temp = new Node(num);
     return temp;
 }
 
 void LinkedList::add(int num) {
     if (nullptr == Head) {
         //Modify code here
-        Head = nullptr; // get a new Node rather nullptr
+        Head = getNode(num); // get a new Node rather nullptr
         Last = Head;
     } else {
         //Modify code here
